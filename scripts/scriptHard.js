@@ -1,3 +1,4 @@
+"use strict";
 let num = 266219;
 let str = String(num);
 let arr = [];
@@ -7,7 +8,7 @@ for (let i = 0; i < str.length;i++) {
 }
 //console.log(arr.join());
 
-let multiplication = arr.reduce((acc, index) =>  acc * (+index), 1)
+let multiplication = arr.reduce((acc, index) => acc * (+index), 1);
 console.log('multiplication: ', multiplication);
 
 let exponentiation = multiplication ** 3;
