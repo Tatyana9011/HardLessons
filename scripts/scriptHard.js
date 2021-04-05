@@ -43,7 +43,10 @@ langArray.en = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturda
 console.log(langArray[lang]);
 
 
-let namePerson = prompt('Введите имя');
-(namePerson === 'Артем') ? console.log("директор")
-  : (namePerson === 'Максим') ? console.log('преподаватель')
-    : console.log('студент');
+let namePerson = prompt('Введите имя','');
+
+let nameLogin = (namePerson === 'Артем') ? "директор" :
+  (namePerson === 'Максим') ? 'преподаватель' :
+    'студент';
+   
+    console.log(nameLogin);
