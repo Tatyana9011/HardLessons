@@ -51,7 +51,7 @@ let nameLogin = (namePerson === 'Артем') ? "директор" :
    
     console.log(nameLogin);
 
-function getStringMethod(arg) {
+/* function getStringMethod(arg) {
   if (typeof (arg) !== 'string') {
    return ("Вы ввели не строку");
   }  else {
@@ -66,3 +66,25 @@ function getStringMethod(arg) {
 let string = "    . je;rufb     dl/fg/laehglj aenv'ojgef' 'aoefvb'oubef'ou 'eirhfguie      ";
 let resultString = getStringMethod(string);
 console.log('Проверка метода :', resultString );
+ */
+function getStringMethod(arg, callBack) {
+  if (typeof (arg) !== 'string') {
+   return ("Вы ввели не строку");
+  }  else {
+    let trim = arg.trim();
+    callBack(trim);
+    return (trim);
+  } 
+}
+
+function getString(trim) {
+  if (trim.length >= 30) {
+      let newString = trim.substring(30);
+      return trim.replace(newString, '...');
+    } 
+}
+
+let string = "    . je;rufb     dl/fg/laehglj aenv'ojgef' 'aoefvb'oubef'ou 'eirhfguie      ";
+let resultString = getStringMethod(string, getString);
+console.log('Проверка метода :', resultString );
+
