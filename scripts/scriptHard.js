@@ -50,3 +50,19 @@ let nameLogin = (namePerson === 'Артем') ? "директор" :
     'студент';
    
     console.log(nameLogin);
+
+function getStringMethod(arg) {
+  if (typeof (arg) !== 'string') {
+   return ("Вы ввели не строку");
+  }  else {
+    let trim = arg.trim();
+     if (trim.length >= 30) {
+      let getString = trim.substring(30);
+      return trim.replace(getString, '...');
+    } 
+    return (trim);
+  } 
+}
+let string = "    . je;rufb     dl/fg/laehglj aenv'ojgef' 'aoefvb'oubef'ou 'eirhfguie      ";
+let resultString = getStringMethod(string);
+console.log('Проверка метода :', resultString );
