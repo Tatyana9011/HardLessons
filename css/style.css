@@ -1,0 +1,28 @@
+body {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: block;
+  justify-content: center;
+  width: auto;
+}
+#color {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+#change {
+  font-weight: 800px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 40px;
+  color: rgb(83, 131, 125);
+  background-color: rgb(241, 210, 210);
+  padding: 20px 50px;
+  border: none;
+}
