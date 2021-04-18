@@ -1,28 +1,45 @@
 body {
-  background-color: red;
+  background-color: rgb(68, 64, 64);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .wrapper {
-  display: block;
+  margin-top: 20px;
+  height: 500px;
+  min-width: 1200px;
+  background-color: rgb(212, 193, 193);
   justify-content: center;
   width: auto;
 }
-#color {
-  justify-content: center;
-  align-items: center;
+.register {
   display: flex;
-  color: white;
+  align-items: center;
+  justify-content: center;
 }
-#change {
-  font-weight: 800px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 40px;
-  color: rgb(83, 131, 125);
-  background-color: rgb(241, 210, 210);
+button {
+  font-size: 25px;
+  margin-right: 10px;
   padding: 20px 50px;
-  border: none;
+}
+#list {
+  color: black;
+  margin-left: 20px;
+}
+#username {
+  margin-left: 10px;
+}
+.delete {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px 5px;
+  font-size: 10px;
 }
