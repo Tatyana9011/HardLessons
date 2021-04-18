@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const addZero = n => n < 10 ? "0" + n : n;
   const getString = function (value) {
-    console.log('value.', value.split(' ').length);
     if (value.split(' ').length > 2 || value.split(' ').length <= 1) {
       alert('Ошибка ввода!');
       return null;
