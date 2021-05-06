@@ -6,23 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 
 <body>
-
-<select id="cars">
-    <option value="no">Выберите тачку</option>
-    <option value="bmw">bmw</option>
-    <option value="volvo">volvo</option>
-</select>
-
-<div id="output">
-    выбери тачку
+    
+<div class="container сurrency-selection">
+    <h1>Конвертор валют</h1>
+    <div class='question'>
+        <div class='client'>
+            <form class='submit'>
+            <div class='section-client'>
+                <label class="titel-сurrency-selection">Выберите валюту  </label>
+                <select class="selection-value" required>
+                    <option value="">Валюта</option>
+                    <option value="EUR">Евро (EUR)</option>
+                    <option value="USD">Доллар США (USD)</option>
+                    <option value="RUB">Русский рубль (RUB)</option>
+                </select>
+            </div>
+            
+            <div class='section-client-value'>
+                <label class='label-question'>Введите сумму</label>
+                <input type="number" class="value-start"required>
+            </div>
+        </div>
+        <div>
+            <label class="titel-сurrency-selection">Конвертировать в </label>
+            <select class="selection-result"required>
+                <option value="">Валюту</option>
+                <option value="EUR">Евро (EUR)</option>
+                <option value="USD">Доллар США (USD)</option>
+                <option value="RUB">Русский рубль (RUB)</option>
+            </select>
+            <div class="section-calc-result">
+                <label id='response'></label>
+                <input type="text" class="value-end" disabled>
+            </div>
+        </div>
+    </div>
+    <button class='submit-btn' type="submit">Конвертировать</button>
+    </form>
 </div>
-
 
 <script src="script.js"></script>
 </body>
